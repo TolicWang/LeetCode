@@ -14,14 +14,14 @@ class Solution:
             index = line#  0    1   2   3   4
             indices.append(index)
             space = i # 6 4 2
-            if (line == 0 or line == numRows - 1):
+            if (line == 0 or line == numRows - 1):#  space = k
                 while (index + k < lens):
                     index += k
                     indices.append(index)
             else:
                 while (index + space < lens):
                     index += space
-                    space = k - space
+                    space = k - space# space 交替变换
                     indices.append(index)
         conversion = ""
         for j in indices:
