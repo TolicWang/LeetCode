@@ -21,7 +21,7 @@
 
 [源码点击](m1.py)
 ### 2.最优解（84ms)
-第一步：建立一个元素个数为numRows的list,即 ` l=[""] * numRows`;
+第一步：建立一个元素个数为numRows的list,即 ` l=[""] * numRows`;<br>
 第二步：遍历 `s`中的所有字符，按条件加入到`l`中，如上图中的`a~u`在`l`中的存在形式为：`l=["aiq","bhjpr","cgkos","dflnt","emu"]`<br>
 
 [源码点击](m2.py)<br>
