@@ -21,6 +21,7 @@
 按照阅读解答中的提示，采用了[方法四（中心扩展法）](https://leetcode-cn.com/problems/longest-palindromic-substring/solution/)来实现：
 <br><br>
 ![p1](p1.png)
+
 如图所示，其思路为分别以 `indices`中的各个值为中心，然后向两边扩展子串。当以`indices`中的每个值为中心时，首先要计算的就是原始字符串中的起始索引`start`和结尾索引`end`；当`s[start]!=s[end]`时，就判断当前回文子串的长度`len(s[start+1:end])`，然后做出相应的判断。
 
 [源码点击](m2.py)
